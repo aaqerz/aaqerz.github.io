@@ -163,6 +163,16 @@ body {
   border-bottom: 1px solid transparent; padding-bottom: 2px; transition: border-color 0.2s ease;
 }
 .book:hover .book-cta { border-color: var(--amber); }
+.book-buy {
+  display: inline-block; margin-top: 14px; padding: 9px 18px;
+  font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--amber); text-decoration: none;
+  border: 1px solid rgba(224,185,104,0.5); border-radius: 4px;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.book:hover .book-buy, .book:focus-visible .book-buy {
+  background: var(--amber); color: #1a1408; border-color: var(--amber);
+}
 .book.soon .cover { opacity: 0.4; filter: saturate(0.55); }
 .book.soon { pointer-events: none; }
 .book.soon .book-title { color: var(--text-muted); }
@@ -252,71 +262,71 @@ footer {
 
     <div class="shelf-grid">
 
-      <a class="book" href="/books/the-architecture-of-reality/">
+      <a class="book" href="https://books2read.com/u/4X7zg5" target="_blank" rel="noopener">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book One</span><span class="cover-title sm">The Architecture of Reality</span>
         </div><img class="cover-img" src="/images/covers/the-architecture-of-reality.jpg" alt="The Architecture of Reality" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">The Architecture of Reality</div>
           <div class="book-sub">Thirteen equations that built the modern world</div>
-          <span class="book-cta">Read more</span>
+          <span class="book-buy">Get the book</span>
         </div>
       </a>
 
-      <a class="book" href="/books/stardust-briefly/">
+      <a class="book" href="https://books2read.com/u/mKZa9v" target="_blank" rel="noopener">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Two</span><span class="cover-title sm">Stardust, Briefly</span>
         </div><img class="cover-img" src="/images/covers/stardust-briefly.jpg" alt="Stardust, Briefly" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">Stardust, Briefly</div>
           <div class="book-sub">How we learned to stop fooling ourselves</div>
-          <span class="book-cta">Read more</span>
+          <span class="book-buy">Get the book</span>
         </div>
       </a>
 
-      <a class="book" href="/books/the-weight-of-everything/">
+      <div class="book soon">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Three</span><span class="cover-title sm">The Weight of Everything</span>
         </div><img class="cover-img" src="/images/covers/the-weight-of-everything.jpg" alt="The Weight of Everything" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">The Weight of Everything</div>
           <div class="book-sub">A history of gravity, from Aristotle to the quantum frontier</div>
-          <span class="book-cta">Read more</span>
+          <span class="book-cta">Forthcoming</span>
         </div>
-      </a>
+      </div>
 
-      <a class="book" href="/books/the-language-of-light/">
+      <div class="book soon">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Four</span><span class="cover-title sm">The Language of Light</span>
         </div><img class="cover-img" src="/images/covers/the-language-of-light.jpg" alt="The Language of Light" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">The Language of Light</div>
           <div class="book-sub">The three-thousand-year hunt for what light really is</div>
-          <span class="book-cta">Read more</span>
+          <span class="book-cta">Forthcoming</span>
         </div>
-      </a>
+      </div>
 
-      <a class="book" href="/books/to-bind-and-to-break/">
+      <div class="book soon">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Five</span><span class="cover-title sm">To Bind and to Break</span>
         </div><img class="cover-img" src="/images/covers/to-bind-and-to-break.jpg" alt="To Bind and to Break" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">To Bind and to Break</div>
           <div class="book-sub">Why stars shine, matter holds, and we exist</div>
-          <span class="book-cta">Read more</span>
+          <span class="book-cta">Forthcoming</span>
         </div>
-      </a>
+      </div>
 
-      <a class="book" href="/books/a-certain-uncertainty/">
+      <div class="book soon">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Six</span><span class="cover-title sm">A Certain Uncertainty</span>
         </div><img class="cover-img" src="/images/covers/a-certain-uncertainty.jpg" alt="A Certain Uncertainty" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">A Certain Uncertainty</div>
           <div class="book-sub">What the quantum world is, and what it refuses to tell us</div>
-          <span class="book-cta">Read more</span>
+          <span class="book-cta">Forthcoming</span>
         </div>
-      </a>
+      </div>
 
       <div class="book soon">
         <div class="cover"><div class="cover-face">

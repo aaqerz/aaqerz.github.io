@@ -130,7 +130,7 @@ body {
 }
 .cover-num { font-family: var(--sans); font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber); }
 .cover-title { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 24px; line-height: 1.12; color: var(--text); }
-.cover-face img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.cover-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; }
 
 /* Series */
 .series { max-width: 1100px; margin: 0 auto; padding: 20px 32px 20px; border-top: 1px solid var(--hairline-soft); }
@@ -232,7 +232,7 @@ footer {
       <div class="cover"><div class="cover-face feat">
         <span class="cover-num">The New Book</span>
         <span class="cover-title">The Curious Inheritance</span>
-      </div></div>
+      </div><img class="cover-img" src="/images/covers/the-curious-inheritance.jpg" alt="The Curious Inheritance" onerror="this.remove()"></div>
     </a>
     <div class="featured-body">
       <div class="eyebrow">The new book</div>
@@ -255,7 +255,7 @@ footer {
       <a class="book" href="/books/the-architecture-of-reality/">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book One</span><span class="cover-title sm">The Architecture of Reality</span>
-        </div></div>
+        </div><img class="cover-img" src="/images/covers/the-architecture-of-reality.jpg" alt="The Architecture of Reality" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">The Architecture of Reality</div>
           <div class="book-sub">Thirteen equations that built the modern world</div>
@@ -266,7 +266,7 @@ footer {
       <a class="book" href="/books/stardust-briefly/">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Two</span><span class="cover-title sm">Stardust, Briefly</span>
-        </div></div>
+        </div><img class="cover-img" src="/images/covers/stardust-briefly.jpg" alt="Stardust, Briefly" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">Stardust, Briefly</div>
           <div class="book-sub">How we learned to stop fooling ourselves</div>
@@ -277,7 +277,7 @@ footer {
       <a class="book" href="/books/the-weight-of-everything/">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Three</span><span class="cover-title sm">The Weight of Everything</span>
-        </div></div>
+        </div><img class="cover-img" src="/images/covers/the-weight-of-everything.jpg" alt="The Weight of Everything" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">The Weight of Everything</div>
           <div class="book-sub">A history of gravity, from Aristotle to the quantum frontier</div>
@@ -288,7 +288,7 @@ footer {
       <a class="book" href="/books/the-language-of-light/">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Four</span><span class="cover-title sm">The Language of Light</span>
-        </div></div>
+        </div><img class="cover-img" src="/images/covers/the-language-of-light.jpg" alt="The Language of Light" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">The Language of Light</div>
           <div class="book-sub">The three-thousand-year hunt for what light really is</div>
@@ -299,7 +299,7 @@ footer {
       <a class="book" href="/books/to-bind-and-to-break/">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Five</span><span class="cover-title sm">To Bind and to Break</span>
-        </div></div>
+        </div><img class="cover-img" src="/images/covers/to-bind-and-to-break.jpg" alt="To Bind and to Break" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">To Bind and to Break</div>
           <div class="book-sub">Why stars shine, matter holds, and we exist</div>
@@ -310,7 +310,7 @@ footer {
       <a class="book" href="/books/a-certain-uncertainty/">
         <div class="cover"><div class="cover-face">
           <span class="cover-num">Book Six</span><span class="cover-title sm">A Certain Uncertainty</span>
-        </div></div>
+        </div><img class="cover-img" src="/images/covers/a-certain-uncertainty.jpg" alt="A Certain Uncertainty" onerror="this.remove()"></div>
         <div class="book-meta">
           <div class="book-title">A Certain Uncertainty</div>
           <div class="book-sub">What the quantum world is, and what it refuses to tell us</div>

@@ -105,6 +105,19 @@ body {
 }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px -12px rgba(230,190,110,0.6); background: #f0cd85; }
 .btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.cta-col { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 28px; }
+.cta-col .btn { margin-top: 0; }
+.btn-india {
+  display: inline-block; padding: 9px 17px;
+  font-family: var(--sans); font-size: 12px; letter-spacing: 0.04em;
+  color: var(--text-secondary); text-decoration: none;
+  border: 1px solid rgba(224,185,104,0.40); border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.btn-india:hover, .btn-india:focus-visible {
+  background: rgba(224,185,104,0.12); color: var(--text); border-color: var(--amber); outline: none;
+}
+.btn-india b { color: inherit; font-weight: 600; }
 
 /* Cover object */
 .cover {
@@ -179,6 +192,7 @@ body {
   letter-spacing: 0.02em; color: var(--text-muted); text-decoration: none;
 }
 .india-link:hover, .india-link:focus-visible { color: var(--amber); outline: none; }
+.india-link b { color: var(--amber); font-weight: 600; }
 .book.soon .cover { opacity: 0.4; filter: saturate(0.55); }
 .book.soon { pointer-events: none; }
 .book.soon .book-title { color: var(--text-muted); }
@@ -216,6 +230,7 @@ footer {
   .featured { grid-template-columns: 1fr; gap: 34px; padding: 36px 24px 52px; justify-items: center; text-align: center; }
   .featured-cover { width: 100%; max-width: 230px; }
   .featured-blurb { margin-left: auto; margin-right: auto; }
+  .cta-col { align-items: center; }
   .about { flex-direction: column; text-align: center; gap: 24px; padding-top: 50px; }
 }
 @media (max-width: 640px) {
@@ -255,8 +270,10 @@ footer {
       <h1 class="featured-title">The Curious Inheritance</h1>
       <p class="featured-subtitle">The fears we're handed, and the curiosity that frees us</p>
       <p class="featured-blurb">You've never really believed any of it. And you've never quite stopped doing it either. <em>The Curious Inheritance</em> is about where our inherited fears come from, and what they quietly cost us. You won't be asked to give anything up, only to ask one question, the way a curious child asks it: <strong>Why?</strong></p>
-      <a class="btn" href="https://books2read.com/u/boKGLR" target="_blank" rel="noopener">Get the book</a>
-      <a class="india-link" href="https://www.amazon.in/Curious-Inheritance-fears-handed-curiosity/dp/B0HBR5Z1CF" target="_blank" rel="noopener">In India? Get the India edition &rarr;</a>
+      <div class="cta-col">
+        <a class="btn" href="https://books2read.com/u/boKGLR" target="_blank" rel="noopener">Get the book</a>
+        <a class="btn-india" href="https://www.amazon.in/Curious-Inheritance-fears-handed-curiosity/dp/B0HBR5Z1CF" target="_blank" rel="noopener">In <b>India</b>? Buy on Amazon.in &rarr;</a>
+      </div>
     </div>
   </section>
 
@@ -277,7 +294,7 @@ footer {
           <div class="book-title">The Architecture of Reality</div>
           <div class="book-sub">Thirteen equations that built the modern world</div>
           <a class="book-buy" href="https://books2read.com/u/4X7zg5" target="_blank" rel="noopener">Get the book</a>
-          <a class="india-link" href="https://www.amazon.in/Architecture-Reality-Thirteen-Equations-Modern/dp/B0H8CNLX6B" target="_blank" rel="noopener">Buy in India &rarr;</a>
+          <a class="india-link" href="https://www.amazon.in/Architecture-Reality-Thirteen-Equations-Modern/dp/B0H8CNLX6B" target="_blank" rel="noopener">In <b>India</b>? Buy on Amazon.in &rarr;</a>
         </div>
       </div>
 

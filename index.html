@@ -173,6 +173,12 @@ body {
 .book:hover .book-buy, .book:focus-visible .book-buy {
   background: var(--amber); color: #1a1408; border-color: var(--amber);
 }
+.cover-link { display: block; text-decoration: none; }
+.india-link {
+  display: block; margin-top: 12px; font-family: var(--sans); font-size: 12.5px;
+  letter-spacing: 0.02em; color: var(--text-muted); text-decoration: none;
+}
+.india-link:hover, .india-link:focus-visible { color: var(--amber); outline: none; }
 .book.soon .cover { opacity: 0.4; filter: saturate(0.55); }
 .book.soon { pointer-events: none; }
 .book.soon .book-title { color: var(--text-muted); }
@@ -250,6 +256,7 @@ footer {
       <p class="featured-subtitle">The fears we're handed, and the curiosity that frees us</p>
       <p class="featured-blurb">You've never really believed any of it. And you've never quite stopped doing it either. <em>The Curious Inheritance</em> is about where our inherited fears come from, and what they quietly cost us. You won't be asked to give anything up, only to ask one question, the way a curious child asks it: <strong>Why?</strong></p>
       <a class="btn" href="https://books2read.com/u/boKGLR" target="_blank" rel="noopener">Get the book</a>
+      <a class="india-link" href="https://www.amazon.in/Curious-Inheritance-fears-handed-curiosity/dp/B0HBR5Z1CF" target="_blank" rel="noopener">In India? Get the India edition &rarr;</a>
     </div>
   </section>
 
@@ -262,27 +269,28 @@ footer {
 
     <div class="shelf-grid">
 
-      <a class="book" href="https://books2read.com/u/4X7zg5" target="_blank" rel="noopener">
-        <div class="cover"><div class="cover-face">
+      <div class="book">
+        <a class="cover-link" href="https://books2read.com/u/4X7zg5" target="_blank" rel="noopener"><div class="cover"><div class="cover-face">
           <span class="cover-num">Book One</span><span class="cover-title sm">The Architecture of Reality</span>
-        </div><img class="cover-img" src="/images/covers/the-architecture-of-reality.jpg" alt="The Architecture of Reality" onerror="this.remove()"></div>
+        </div><img class="cover-img" src="/images/covers/the-architecture-of-reality.jpg" alt="The Architecture of Reality" onerror="this.remove()"></div></a>
         <div class="book-meta">
           <div class="book-title">The Architecture of Reality</div>
           <div class="book-sub">Thirteen equations that built the modern world</div>
-          <span class="book-buy">Get the book</span>
+          <a class="book-buy" href="https://books2read.com/u/4X7zg5" target="_blank" rel="noopener">Get the book</a>
+          <a class="india-link" href="https://www.amazon.in/Architecture-Reality-Thirteen-Equations-Modern/dp/B0H8CNLX6B" target="_blank" rel="noopener">Buy in India &rarr;</a>
         </div>
-      </a>
+      </div>
 
-      <a class="book" href="https://books2read.com/u/mKZa9v" target="_blank" rel="noopener">
-        <div class="cover"><div class="cover-face">
+      <div class="book">
+        <a class="cover-link" href="https://books2read.com/u/mKZa9v" target="_blank" rel="noopener"><div class="cover"><div class="cover-face">
           <span class="cover-num">Book Two</span><span class="cover-title sm">Stardust, Briefly</span>
-        </div><img class="cover-img" src="/images/covers/stardust-briefly.jpg" alt="Stardust, Briefly" onerror="this.remove()"></div>
+        </div><img class="cover-img" src="/images/covers/stardust-briefly.jpg" alt="Stardust, Briefly" onerror="this.remove()"></div></a>
         <div class="book-meta">
           <div class="book-title">Stardust, Briefly</div>
           <div class="book-sub">How we learned to stop fooling ourselves</div>
-          <span class="book-buy">Get the book</span>
+          <a class="book-buy" href="https://books2read.com/u/mKZa9v" target="_blank" rel="noopener">Get the book</a>
         </div>
-      </a>
+      </div>
 
       <div class="book soon">
         <div class="cover"><div class="cover-face">
